@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Recursive:wght@700&display=swap');
+
+body {
+
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 78%, rgba(252,70,107,1) 100%); 
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Recursive', sans-serif;
+    text-shadow: 2px 2px rgb(243, 99, 123);
+
+  }
+  
+  input[type="text"] {
+    width: 300px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid red;
+    background-color: #e2a7b1;
+    height: 28px;
+  }
+  
+  
+  button {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  #resultContainer {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+  }
+  
+  #score,
+  #sentiment {
+    margin: 5px 0;
+  }
+  
+  .neutral-bg {
+    background-color: pink;
+  }
+  
+  .positive-bg {
+    background-color: #d4f7da;
+  }
+  
+  .weak-negative-bg {
+    background-color: #ffe7e7;
+  }
+  
+  .default-bg {
+    /* Add your default background image here */
+    background-image: url('https://images.unsplash.com/photo-1521033719794-41049d18b8d4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80');
+    background-size: cover;
+  }
+  @media (max-width: 767px) {
+    h1 {
+      font-size: 24px;
+    }
+    
+    input[type="text"] {
+      width: 100%;
+    }
+  
+    #resultContainer {
+      margin-top: 10px;
+    }
+  
+    #score,
+    #sentiment {
+      font-size: 14px;
+    }
+  }
+  
+  /* For screens larger than 768px (e.g., laptops) */
+  @media (min-width: 768px) {
+    h1 {
+      font-size: 32px;
+    }
+  
+    input[type="text"] {
+      width: 300px;
+    }
+  
+    #resultContainer {
+      margin-top: 20px;
+    }
+  
+    #score,
+    #sentiment {
+      font-size: 16px;
+    }
+  }
